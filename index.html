@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='UTF-8'>
+    <title>Image Classifier</title>
+    <link rel='stylesheet' type='text/css' href='statics/index.css'>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src='https://unpkg.com/@tensorflow/tfjs'></script>
+    <script src='https://unpkg.com/@tensorflow-models/mobilenet'></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Image Classifier </a>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Help..</button>
+        </div>
+    </nav>
+    <div style="padding: 20px">
+      
+      <h2>Try your hands<h2>
+    <br>
+    <div style="border:2px solid black">
+      <input type='file' id='upload' accept='image/*' onchange='openFile(event); app(event)'>
+    </div> <br>    
+    <pre id='pred'></pre>
+    <img id='output' src='images/knn.jpeg'> 
+
+    </div>       
+    <script src='js/index.js'></script>
+  </body>
+</html>
